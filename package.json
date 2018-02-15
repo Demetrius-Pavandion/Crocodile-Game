@@ -1,0 +1,39 @@
+{
+  "name": "crocodile-game-client-final-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-numeric-input": "^2.2.3",
+    "react-scripts": "1.1.0",
+    "semantic-ui-react": "^0.77.2",
+    "semantic-ui-react-numberpicker": "0.0.1-b",
+    "socket.io": "^2.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "crocodile game final project js-base-course",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-google": "^0.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kulikmaxim/crocodile-game-client-final-project.git"
+  },
+  "keywords": [
+    "crocodile"
+  ],
+  "author": "max",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kulikmaxim/crocodile-game-client-final-project/issues"
+  },
+  "homepage": "https://github.com/kulikmaxim/crocodile-game-client-final-project#readme"
+}
