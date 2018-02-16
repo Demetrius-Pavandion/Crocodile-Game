@@ -18,7 +18,7 @@ class PresenterPanel extends Component {
                         onClick={onStartRound} 
                     />)
                 }
-                {word ? <h>Your word: <b>{word}</b></h> : null}
+                {word ? <span>Your word: <b>{word}</b></span> : null}
             </Segment>
         );
     }

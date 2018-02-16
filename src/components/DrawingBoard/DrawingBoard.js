@@ -23,9 +23,7 @@ class DrawingBoard extends Component {
         });
 
         this.props.socket.on('draw', ({ x0, y0, x1, y1, color, lineWidth }) => {
-            //if (!this.props.user.isPresenter) {
-                this.drawLine(x0, y0, x1, y1, color, lineWidth);
-            //}
+            this.drawLine(x0, y0, x1, y1, color, lineWidth);
         });
 
         this.props.socket.on('clear', () => {
@@ -117,6 +115,12 @@ class DrawingBoard extends Component {
         }
     }
 
+    onMouseLeave = () => {
+        if (this.drawing) {
+            this.drawing = false;
+        }  
+    }
+
     render() {
         const { panelVisible, lineWidth, width, height } = this.state;
         return (
@@ -150,9 +154,11 @@ class DrawingBoard extends Component {
                                 ref='canvas'
                                 width={width}
                                 height={height}
+
                                 onMouseDown={this.props.user.isPresenter ? this.handleMouseDown : null}
                                 onMouseMove={this.props.user.isPresenter ? this.handleMouseMove  : null}
                                 onMouseUp={this.props.user.isPresenter ? this.handleMouseUp : null}
+                                onMouseLeave={this.props.user.isPresenter ? this.onMouseLeave : null}
                             />
                             <ReactResizeDetector
                                 handleWidth
