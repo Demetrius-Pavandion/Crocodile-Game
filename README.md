@@ -80,5 +80,5 @@ npm deploy
 
 # App info
 
-- [Presentation](link)
+- [Presentation](http://slides.com/kulikmaxim/deck)
 - [Game Demo](https://kulikmaxim.github.io/crocodile-game-client-final-project)
